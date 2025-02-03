@@ -35,16 +35,16 @@ function Navbar() {
           </Link>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="/#home">Home</a>
             </li>
             <li>
-              <a href="#market">Market</a>
+              <a href="/#market">Market</a>
             </li>
             <li>
-              <a href="#choose-us">Choose Us</a>
+              <a href="/#choose-us">Choose Us</a>
             </li>
             <li>
-              <a href="#join">Join</a>
+              <a href="/#join">Join</a>
             </li>
           </ul>
           <span>
@@ -64,16 +64,16 @@ function Navbar() {
         <i onClick={openMobile} className="fa-solid fa-xmark close-mobile"></i>
         <ul>
           <li onClick={openMobile}>
-            <a href="#home">Home</a>
+            <a href="/#home">Home</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#market">Market</a>
+            <a href="/#market">Market</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#choose-us">Choose Us</a>
+            <a href="/#choose-us">Choose Us</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#join">Join</a>
+            <a href="/#join">Join</a>
           </li>
         </ul>
       </div>
