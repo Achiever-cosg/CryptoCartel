@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Crytpo Cartel
 
-## Available Scripts
+A React.js application that fetches and displays the current market cap and 24-hour market cap change of the top cryptocurrencies
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Displays real-time market cap of top cryptocurrencies
+- Shows 24-hour percentage change in market cap
+- Mobile-friendly UI
+- Uses CoinGecko API for crypto data
+- React Hooks for state management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- React.js (Frontend framework)
+- CoinGecko API (Crypto data source)
+- CSS/Tailwind (For styling)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Installation
 
-### `npm run build`
+1. Clone the repository:
+```shell
+git clone https://github.com/Achiever-cosg/CryptoCartel
+cd CryptoCartel
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+```shell
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+```shell
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open http://localhost:3000/ in your browser.
 
-### `npm run eject`
+## 🔄 How It Works
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Fetches real-time market cap data from CoinGecko API
+- Displays the top cryptocurrencies ranked by market cap
+- Shows the percentage change in market cap over the last 24 hours
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📡 API Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+We use the CoinGecko API to fetch crypto data:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Example API Request:
+```js
+GET https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc
+```
 
-## Learn More
+## 🛠 Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To deploy the application, use Vercel, Netlify, or GitHub Pages:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Deploy with Vercel
+```shell
+npm build
+vercel
+```
 
-### Code Splitting
+## 📌 TODOs / Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ✅ Add search functionality for specific coins
+- ✅ Implement live updates every few seconds
+- 🚀 Support for more fiat currencies
+- 🚀 Add historical market cap trends
 
-### Analyzing the Bundle Size
+## 🙌 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork this repository
+2. Create a new branch (feature-branch)
+3. Commit your changes (git commit -m 'Add new feature')
+4. Push to your branch (git push origin feature-branch)
+5. Create a Pull Request 🚀
